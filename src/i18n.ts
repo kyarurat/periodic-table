@@ -43,12 +43,9 @@ const messages = {
   },
 } as const;
 
-const browserLocale =
-  typeof navigator !== 'undefined' && navigator.language.toLowerCase().startsWith('zh') ? 'zh' : 'en';
-
 export const i18n = createI18n({
   legacy: false,
-  locale: browserLocale,
+  locale: 'zh',
   fallbackLocale: 'en',
   messages,
 });
