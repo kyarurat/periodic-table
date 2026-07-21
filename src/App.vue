@@ -139,6 +139,17 @@ const elementNameStyle = (element: ElementRecord) => {
         <div class="square">89-103</div>
       </div>
       <div class="gap c3 r8" :class="{ dimmed: gapDimmed }" />
+      <footer class="site-footer" @click.stop>
+        <span class="footer-atom" aria-hidden="true">
+          <span class="footer-nucleus" />
+          <span class="footer-orbit footer-orbit-x" />
+          <span class="footer-orbit footer-orbit-y" />
+          <span class="footer-orbit footer-orbit-z" />
+        </span>
+        <a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener noreferrer">
+          滇ICP备2022004633号-1
+        </a>
+      </footer>
       <div class="language-switch" @click.stop>
         <button class="lang-btn" :class="{ active: locale === 'en' }" type="button" @click.stop="locale = 'en'">EN</button>
         <button class="lang-btn" :class="{ active: locale === 'zh' }" type="button" @click.stop="locale = 'zh'">中文</button>
